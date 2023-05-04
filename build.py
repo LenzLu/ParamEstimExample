@@ -1,4 +1,5 @@
 import os, sys
+import numpy
 import pymake 
 import flopy
 import gsflow
@@ -22,7 +23,7 @@ def build_all(apps = ["mf2005"], path="bin", rebuild=False, verbose=True):
     
 def print_version_info():    
     print(f'Kernel version: {sys.version}')
-    print(f'numpy version: {np.__version__}')        
+    print(f'numpy version: {numpy.__version__}')        
     print(f'flopy version: {flopy.__version__}')    
     print(f'gsflow version: {gsflow.__version__}')
 
